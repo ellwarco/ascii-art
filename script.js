@@ -27,7 +27,8 @@ input.addEventListener('change', function() {
 });
 
 function processImage(img) {
-    var chars = ['&nbsp;', '\'', '.', ':', '|', 'T',  'X', '0', '#'];
+    var chars =  ['&nbsp;', '&#39;', '&quot;', ';', '!', '&lt;', '_', ']', '{', '(', 't', 'r', 'u', 'z', 'U', 'L', 'O', 'w', 'd', 'h', '*', 'W', '%', '$'];
+
     var width = img.width;
     var height = img.height;
     var markup = '';
