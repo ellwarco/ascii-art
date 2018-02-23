@@ -1,5 +1,7 @@
 var img = new Image();
-img.src = 'https://mdn.mozillademos.org/files/5397/rhino.jpg';
+img.src = './rhino.jpg';
+img.crossOrigin = "Anonymous";
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 img.onload = function() {
