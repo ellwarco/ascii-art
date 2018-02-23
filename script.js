@@ -15,7 +15,9 @@ input.addEventListener('change', function() {
             canvas.width = img.width;
             canvas.height = img.height;
             ctx.drawImage(img, 0, 0);
+            console.time('processImage');
             processImage(img);
+            console.timeEnd('processImage');
         }, false);
     }, false);
 
