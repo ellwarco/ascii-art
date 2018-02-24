@@ -33,7 +33,7 @@ function processImage(img) {
     var height = img.height;
     var markup = '';
 
-    //in here our scale is 3 - it means we count only 1 of 3 pixels
+    // in here our scale is 3 - it means we count only 1 of 3 pixels
     for(var y = 0; y < height; y += 3) {
         for(var x = 0; x < width; x += 3) {
             // get rgb
