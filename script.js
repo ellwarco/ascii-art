@@ -46,7 +46,7 @@ function processImage(img) {
             // get the relevant character
             var index = Math.floor((r + g + b) * (chars.length - 1) /(255 * 3));
             var ch = chars[index];
-            markup += ch;
+            markup += `<span style="color:rgb(${r}, ${g}, ${b})">${ch}</span>`;
         }
         markup += '<br>';
     }
