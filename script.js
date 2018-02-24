@@ -1,7 +1,7 @@
 var input = document.getElementById('file-input');
 var result = document.getElementById('result');
 
-var canvas = document.createElement('canvas')//document.getElementById('canvas');
+var canvas = document.createElement('canvas');
 var ctx = canvas.getContext('2d');
 
 input.addEventListener('change', function() {
@@ -43,6 +43,7 @@ function processImage(img) {
             var g = data[1];
             var b = data[2];
 
+            // get the relevant character
             var index = Math.floor((r + g + b) * (chars.length - 1) /(255 * 3));
             var ch = chars[index];
             markup += ch;
